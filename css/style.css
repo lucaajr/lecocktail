@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Inter Tight', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     min-height: 100%;
     min-width: 100%;
     background-color: rgba(0, 0, 0, 0.712);
@@ -357,7 +357,7 @@ body {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 576px) {
     .grid-container {
         grid-template-columns: 100%;
         grid-template-rows: 75px 50px auto 75px;
@@ -367,9 +367,13 @@ body {
         "main" 
         "footer"; 
     }
+
+        body {
+            font-size: 1.0rem;
+        }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
     .grid-container {
         grid-template-columns: 100%;
         grid-template-rows: 75px 50px auto 75px;
@@ -379,4 +383,9 @@ body {
         "main" 
         "footer"; 
     }
+
+    body {
+        font-size: 1.1rem;
+    }
+
 }
