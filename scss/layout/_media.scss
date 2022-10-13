@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+ @media (min-width: 576px) {
     .grid-container {
         grid-template-columns: 100%;
         grid-template-rows: 75px auto 75px;
@@ -9,7 +9,25 @@
     }
 
         body {
-            font-size: 1.0rem;
+            font-size: 0.95rem;
+        }
+        .navbar ul {
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block; 
+                a {
+                    display: block;
+                    padding: 0.3rem 2rem;
+                    transition: all 0.3s linear;
+                    border-radius: 2px;
+                    &:hover {
+                        background: #4a4a4a;
+                    }
+                }
+            }
         }
 }
 
@@ -24,7 +42,7 @@
     }
 
     body {
-        font-size: 1.1rem;
+        font-size: 1.0rem;
     }
 
-}
+} 

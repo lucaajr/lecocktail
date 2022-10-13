@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: $column;
     grid-auto-rows: $row;
-    grid-auto-flow: dense;
+    grid-auto-flow: $flow;
 }
 
 @mixin reset {

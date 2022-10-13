@@ -1,64 +1,73 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 html {
-  height: 100%; }
+  height: 100%;
+}
 
 body {
   font-family: "Inter Tight", sans-serif;
   font-size: 0.9rem;
   min-height: 100%;
   min-width: 100%;
-  background-color: rgba(0, 0, 0, 0.712); }
+  background-color: rgba(0, 0, 0, 0.712);
+}
 
 .grid-container > * {
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.55);
   color: white;
   border-radius: 4px;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+}
 
 .header {
-  grid-area: header; }
+  grid-area: header;
+}
 
 .main {
-  grid-area: main; }
+  grid-area: main;
+}
 
 .footer {
-  grid-area: footer; }
+  grid-area: footer;
+}
 
 .grid-container {
   display: grid;
   gap: 7px;
-  grid-template-rows: 75px auto 75px;
-  grid-template-areas: "header"
- "main"
- "footer"; }
+  grid-template-rows: 160px auto 75px;
+  grid-template-areas: "header" "main" "footer";
+}
 
 .header {
   background: #212121;
   color: whitesmoke;
-  padding: 1.5rem 0; }
-  .header a {
-    color: white;
-    text-decoration: none; }
+  padding: 1.5rem 0;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
 
 .navbar ul {
   align-items: center;
   margin: 0;
   padding: 0;
-  list-style: none; }
-  .navbar ul li {
-    display: inline-block; }
-    .navbar ul li a {
-      display: block;
-      padding: 0.3rem 2rem;
-      transition: all 0.3s linear;
-      border-radius: 2px; }
-      .navbar ul li a:hover {
-        background: #4a4a4a; }
+  list-style: none;
+}
+.navbar ul a {
+  display: block;
+  padding: 0.3rem 2rem;
+  transition: all 0.3s linear;
+  border-radius: 2px;
+}
+.navbar ul a:hover {
+  background: #4a4a4a;
+}
 
 .footer {
   background: #212121;
@@ -67,13 +76,15 @@ body {
   margin-top: 0;
   position: relative;
   bottom: 0;
-  width: 100%; }
-  .footer .icons {
-    color: white;
-    margin: 0;
-    padding: 0rem 1rem;
-    list-style: none;
-    display: inline-block; }
+  width: 100%;
+}
+.footer .icons {
+  color: white;
+  margin: 0;
+  padding: 0rem 1rem;
+  list-style: none;
+  display: inline-block;
+}
 
 .main {
   height: 100%;
@@ -81,7 +92,8 @@ body {
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: darken; }
+  background-blend-mode: darken;
+}
 
 .cover h1 {
   font-family: "Qwitcher Grypen", cursive;
@@ -91,7 +103,8 @@ body {
   line-height: 1.3;
   font-size: 7rem;
   font-weight: lighter;
-  text-align: left; }
+  text-align: left;
+}
 
 .cover p, .cover .boxcarta ul, .boxcarta .cover ul {
   margin-bottom: 1.6em;
@@ -99,7 +112,8 @@ body {
   padding-left: 7%;
   font-size: 12px;
   text-align: left;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+}
 
 .grid-gallery {
   height: 100%;
@@ -109,15 +123,19 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: minmax(200px, auto);
-  grid-auto-flow: dense; }
-  .grid-gallery .principal {
-    grid-column: 1 / 3;
-    grid-row: 1 / 4; }
-  .grid-gallery .tall {
-    grid-row: span 2; }
-  .grid-gallery .wide {
-    grid-column: 1 / 3;
-    grid-row: 4 / 5; }
+  grid-auto-flow: dense;
+}
+.grid-gallery .principal {
+  grid-column: 1/3;
+  grid-row: 1/4;
+}
+.grid-gallery .tall {
+  grid-row: span 2;
+}
+.grid-gallery .wide {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
 
 .grid-item {
   display: flex;
@@ -128,10 +146,12 @@ body {
   transition: transform 0.3s ease-in-out;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
-  .grid-item:hover {
-    filter: opacity(0.7);
-    transform: scale(1.04); }
+  background-repeat: no-repeat;
+}
+.grid-item:hover {
+  filter: opacity(0.7);
+  transform: scale(1.04);
+}
 
 .fondocontact {
   height: 100%;
@@ -139,7 +159,8 @@ body {
   background-size: cover;
   background-position: auto;
   background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: darken; }
+  background-blend-mode: darken;
+}
 
 .contact .form-contact .form-header .form-title {
   font-weight: normal;
@@ -147,7 +168,8 @@ body {
   color: white;
   font-size: large;
   text-align: center;
-  padding: 14px 0; }
+  padding: 14px 0;
+}
 
 .contact .form-contact {
   background: rgba(0, 0, 0, 0.5);
@@ -157,11 +179,13 @@ body {
   padding: 5px 35px;
   margin-top: 6%;
   padding-bottom: 30px;
-  border-radius: 3px; }
-  .contact .form-contact label {
-    display: block;
-    color: white;
-    font-size: 16px; }
+  border-radius: 3px;
+}
+.contact .form-contact label {
+  display: block;
+  color: white;
+  font-size: 16px;
+}
 
 .contact .form-contact .form-input, .form-textarea {
   background: rgba(0, 0, 0, 0.7);
@@ -173,7 +197,8 @@ body {
   margin-bottom: 20px;
   border-radius: 2px;
   font-size: 14px;
-  color: #bbbbbb; }
+  color: #bbbbbb;
+}
 
 .btn-submit {
   width: 100%;
@@ -184,9 +209,11 @@ body {
   color: whitesmoke;
   padding: 15px 0;
   cursor: pointer;
-  transition: all .5s; }
-  .btn-submit:hover {
-    background: #dfdede; }
+  transition: all 0.5s;
+}
+.btn-submit:hover {
+  background: #dfdede;
+}
 
 .fondpresent {
   height: 100%;
@@ -194,7 +221,8 @@ body {
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: darken; }
+  background-blend-mode: darken;
+}
 
 .box {
   width: 31.25rem;
@@ -204,21 +232,26 @@ body {
   padding: 20px;
   color: white;
   text-align: center;
-  border-radius: 15px; }
-  .box img {
-    border-radius: 60%; }
-  .box h2 {
-    font-size: 36px;
-    letter-spacing: 2px;
-    font-weight: 100;
-    margin: 20px 0 10px; }
-  .box h5 {
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-weight: 100;
-    margin-bottom: 20px; }
-  .box p, .box .boxcarta ul, .boxcarta .box ul {
-    text-align: justify; }
+  border-radius: 15px;
+}
+.box img {
+  border-radius: 60%;
+}
+.box h2 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+.box h5 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.box p, .box .boxcarta ul, .boxcarta .box ul {
+  text-align: justify;
+}
 
 .fondobox {
   height: 100%;
@@ -226,7 +259,8 @@ body {
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: darken; }
+  background-blend-mode: darken;
+}
 
 .boxcarta {
   width: 31.25rem;
@@ -236,47 +270,74 @@ body {
   margin-bottom: 0;
   padding: 20px;
   color: whitesmoke;
-  text-align: center; }
-  .boxcarta h2 {
-    font-size: 40px;
-    letter-spacing: 4px;
-    font-weight: 100;
-    margin: 10px 0 20px; }
-  .boxcarta h3, .boxcarta h4 {
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: 100;
-    margin-bottom: 20px; }
-  .boxcarta p, .boxcarta ul {
-    text-align: justify;
-    margin-top: 30px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 100;
-    margin-bottom: 30px; }
-  .boxcarta ul {
-    list-style: none; }
+  text-align: center;
+}
+.boxcarta h2 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  margin: 10px 0 20px;
+}
+.boxcarta h3, .boxcarta h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.boxcarta p, .boxcarta ul {
+  text-align: justify;
+  margin-top: 30px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.boxcarta ul {
+  list-style: none;
+}
 
 .box-trago {
   border-radius: 10%;
-  background-size: cover; }
+  background-size: cover;
+}
 
 @media (min-width: 576px) {
   .grid-container {
     grid-template-columns: 100%;
     grid-template-rows: 75px auto 75px;
-    grid-template-areas: "header" 
- "main" 
- "footer"; }
+    grid-template-areas: "header" "main" "footer";
+  }
   body {
-    font-size: 1.0rem; } }
-
+    font-size: 0.95rem;
+  }
+  .navbar ul {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navbar ul li {
+    display: inline-block;
+  }
+  .navbar ul li a {
+    display: block;
+    padding: 0.3rem 2rem;
+    transition: all 0.3s linear;
+    border-radius: 2px;
+  }
+  .navbar ul li a:hover {
+    background: #4a4a4a;
+  }
+}
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 100%;
     grid-template-rows: 75px auto 75px;
-    grid-template-areas: "header" 
- "main" 
- "footer"; }
+    grid-template-areas: "header" "main" "footer";
+  }
   body {
-    font-size: 1.1rem; } }
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
