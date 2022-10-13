@@ -1,0 +1,46 @@
+.fondocontact{
+    height: 100%;
+    background-image: url(../assets/img/fondcontact.jpg);
+    background-size: cover;
+    background-position: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.contact .form-contact .form-header .form-title {
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color;
+    font-size: large;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.contact .form-contact {
+    background: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 6%;
+    padding-bottom: 30px;
+    border-radius: 3px;
+    label {
+        display: block;
+        color: $primary-color;
+        font-size: 16px;
+    }
+}
+
+.contact .form-contact .form-input, .form-textarea {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #bbbbbb;
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #bbbbbb;
+}

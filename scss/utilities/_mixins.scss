@@ -1,0 +1,18 @@
+@mixin propiedades-flex ($aling ,$justify){
+    display: flex;
+    align-items: $aling;
+    justify-content: $justify;
+}
+
+@mixin propiedades-grid ($column, $row, $flow){
+    display: grid;
+    grid-template-columns: $column;
+    grid-auto-rows: $row;
+    grid-auto-flow: dense;
+}
+
+@mixin reset {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

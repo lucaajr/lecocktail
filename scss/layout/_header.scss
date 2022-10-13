@@ -1,0 +1,30 @@
+.header {
+    background: $background-principal;
+    color: whitesmoke;
+    padding: 1.5rem 0;
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }    
+}
+
+
+
+.navbar ul {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        a {
+            display: block;
+            padding: 0.3rem 2rem;
+            transition: all 0.3s linear;
+            border-radius: 2px;
+            &:hover {
+                background: #4a4a4a;
+            }
+        }
+    }
+}

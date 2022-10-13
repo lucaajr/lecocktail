@@ -1,0 +1,51 @@
+.fondobox{
+    height: 100%;
+    background-image: url(../assets/img/fondocarta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.boxcarta {
+    width: 31.25rem;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+    h2 {
+        font-size: 40px;
+        letter-spacing: 4px;
+        font-weight: 100;
+        margin: 10px 0 20px;
+    }
+    h3 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    h4 {
+        @extend h3;
+    }
+    p {
+        text-align:justify;
+        margin-top: 30px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 100;
+        margin-bottom: 30px;
+    }
+    ul {
+        list-style: none;
+        @extend p;
+    }
+}
+
+.box-trago {
+    border-radius: 10%;
+    background-size: cover;
+}

@@ -1,0 +1,17 @@
+.footer {
+    background: $background-principal;
+    text-align: center;
+    padding: 1rem 0rem;
+    margin-top: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    .icons {
+        color: $primary-color;
+        margin: 0;
+        padding: 0rem 1rem;
+        list-style: none;
+        display: inline-block;
+    } 
+}
